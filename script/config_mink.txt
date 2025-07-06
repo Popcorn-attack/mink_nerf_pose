@@ -1,0 +1,26 @@
+# ##  heads
+model_name = Minkloc_pose_heads
+expname = Mink_Posenet_NeRF_Heads
+basedir = /home/qiqi/APR/direct-posenet/logs
+datadir = /home/qiqi/APR/direct-posenet/data/7Scenes/heads
+dataset_type = 7Scenes
+pretrain_model_path = /home/qiqi/APR/direct-posenet/logs/Minkloc_pose_heads/best_model.pth
+encode_hist = True
+lrate_decay=0.754
+trainskip=5
+testskip=15
+df=4
+NeRFH=True
+use_viewdirs = True
+white_bkgd = True
+#half_res = True
+learning_rate = 0.00001
+batch_size = 1
+#pose_only = 2
+#combine_loss = True
+#combine_loss_w = [0.7, 0.3, 0.3]
+epochToMaxFreq = 1200
+load_pose_avg_stats = True
+#i_eval = 1
+continue_training = True
+
